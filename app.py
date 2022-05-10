@@ -8,8 +8,7 @@ player_height = 35
 width = 330
 height = 50
 new_game = False
-
-
+test = 'hey'
 
 
 
