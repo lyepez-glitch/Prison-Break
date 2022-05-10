@@ -8,7 +8,7 @@ player_height = 35
 width = 330
 height = 50
 new_game = False
-test = 'hey'
+
 
 
 
@@ -255,7 +255,9 @@ def main():
     print('press the up arrow to move your character straight up')
     print('Press "k" to move diagonally')
     print('Press "r" at any time to start a new game')
+    print('Click the red square at the top right of the game window to quit anytime')
     print('Loading...')
+
 
 
   start = input('enter "y" when ready to begin')
