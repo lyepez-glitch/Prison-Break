@@ -37,7 +37,7 @@ def start_game():
     clock = pygame.time.Clock()
     test_font = pygame.font.Font('arial1.ttf', 25)
   # prison_surface = pygame.Surface((700, 350))
-    prison_surface = pygame.image.load('graphics/prison.png')
+    prison_surface = pygame.image.load('/Users/lucas/Prison-Break/dist/app.app/Contents/Resources/prison.png')
     prison_surface = pygame.transform.scale(prison_surface, (360,360))
 
       # score_surface = test_font.render('Health',False,'White')
@@ -48,24 +48,25 @@ def start_game():
 
       # text_background_surface = pygame.Surface((150, 80))
       # text_background_surface.fill('Yellow')
-    ground_surface = pygame.image.load('graphics/ground.jpeg').convert_alpha()
+    ground_surface = pygame.image.load('/Users/lucas/Prison-Break/dist/app.app/Contents/Resources/ground.jpeg').convert_alpha()
     ground_surface = pygame.transform.scale(ground_surface, (800,800))
       # text_surface = test_font.render('Jail Break', False, 'Black')
-    guard_surface = pygame.image.load('graphics/guard1.png').convert_alpha()
-    guard_2_surface = pygame.image.load('graphics/guard1.png').convert_alpha()
+    guard_surface = pygame.image.load('/Users/lucas/Prison-Break/dist/app.app/Contents/Resources/guard1.png').convert_alpha()
+
+    guard_2_surface = pygame.image.load('/Users/lucas/Prison-Break/dist/app.app/Contents/Resources/guard1.png').convert_alpha()
 
     end_rectangle = end_surface.get_rect(center = (675,350))
     guard_rectangle = guard_surface.get_rect(topleft = (guard_1_position,player_height + 10))
     guard_rectangle_2 = guard_2_surface.get_rect(topleft = (75,315))
 
-    full_heart = pygame.image.load('graphics/full_heart.png').convert_alpha()
-    half_heart = pygame.image.load('graphics/half_heart.png').convert_alpha()
-    empty_heart = pygame.image.load('graphics/empty_heart.png').convert_alpha()
+    full_heart = pygame.image.load('/Users/lucas/Prison-Break/dist/app.app/Contents/Resources/full_heart.png').convert_alpha()
+    half_heart = pygame.image.load('/Users/lucas/Prison-Break/dist/app.app/Contents/Resources/half_heart.png').convert_alpha()
+    empty_heart = pygame.image.load('/Users/lucas/Prison-Break/dist/app.app/Contents/Resources/empty_heart.png').convert_alpha()
 
     class Player(pygame.sprite.Sprite):
       def __init__(self):
         super().__init__()
-        self.image = pygame.image.load('graphics/player.png').convert_alpha()
+        self.image = pygame.image.load('/Users/lucas/Prison-Break/dist/app.app/Contents/Resources/player.png').convert_alpha()
         self.image = pygame.transform.scale(self.image, (40,40))
         self.player_width = 70
         self.player_height = 35
